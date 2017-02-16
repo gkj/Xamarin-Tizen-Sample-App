@@ -14,7 +14,7 @@ namespace SampleApp
         {
             // The root page of your application
 
-            MainPage = new EventHandlerPage();
+            MainPage = new DataBindingPage();
         }
 
         protected override void OnStart()

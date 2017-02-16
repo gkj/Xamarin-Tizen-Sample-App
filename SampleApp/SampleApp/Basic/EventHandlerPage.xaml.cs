@@ -14,12 +14,21 @@ namespace SampleApp.Basic
         {
             InitializeComponent();
 
-            button.Clicked += Button_Clicked;
+            // initial value for the slider
+            slider.Value = (slider.Minimum + slider.Maximum) / 2;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Greetings", "Welcome to Xamarin Forms!", "Close");
+        }
+
+        private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var value = e.NewValue;
+
+            // set the label with value from slider
+            label.Text = String.Format("The value is: {0:F2}", value);
         }
     }
 }
