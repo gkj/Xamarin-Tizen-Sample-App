@@ -8,13 +8,11 @@ using Xamarin.Forms;
 
 namespace SampleApp.Basic
 {
-    public partial class DataBindingPage : ContentPage
+    public partial class BindingContextPage : ContentPage
     {
-        public DataBindingPage()
+        public BindingContextPage()
         {
             InitializeComponent();
-
-            
         }
     }
 }
