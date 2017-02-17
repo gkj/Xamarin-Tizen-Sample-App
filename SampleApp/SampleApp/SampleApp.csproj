@@ -43,6 +43,16 @@
     <Compile Include="Basic\EventHandlerPage.xaml.cs">
       <DependentUpon>EventHandlerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="List\BasicListPage.xaml.cs">
+      <DependentUpon>BasicListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="List\ImageCellListPage.xaml.cs">
+      <DependentUpon>ImageCellListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="List\TextCellListPage.xaml.cs">
+      <DependentUpon>TextCellListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs" />
     <Compile Include="SampleApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -77,6 +87,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Basic\BindingContextPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="List\BasicListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="List\TextCellListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="List\ImageCellListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,4 +1,5 @@
 using SampleApp.Basic;
+using SampleApp.List;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace SampleApp
         {
             // The root page of your application
 
-            MainPage = new BindingContextPage();
+            MainPage = new ImageCellListPage();
         }
 
         protected override void OnStart()

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="SampleApp.TizenTV" version="1.0.0">
 	<profile name="common" />
+  <privileges>
+    <privilege>http://tizen.org/privilege/internet</privilege>
+  </privileges>
 	<ui-application appid="org.tizen.example.SampleApp.TizenTV"
 					exec="SampleApp.TizenTV.exe"
 					type="dotnet"
